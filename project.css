@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+  }
+  body {
+    color: #ededed;
+    background: rgb(10, 0, 11); 
+  }
+/* Services */
+.projects{
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 3.7rem;
+    padding-bottom: 4.5rem;
+}
+.sub-title span{
+    color: #0ef;
+}
+.container{
+    padding: 5.5rem;
+}
+    .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 3.5rem;
+    margin-top: 3rem;
+    }
+    .services-list div{
+    background-color: transparent;
+    padding: 2rem;
+    font-size: 0.8rem;
+    font-weight: 0.8rem;
+    border-right: 0.5rem;
+    border-radius: 1.1rem;
+    transition: background 0.5s, transform .5s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    
+    }
+    .services-list div i{
+    font-size: 3.1rem;
+    margin-bottom: 1.9rem;
+    
+    }
+    .services-list div h2{
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+    }
+    .services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.8rem;
+    margin-top: 1.1rem;
+    display: inline-block;
+    }
+    .read{
+    display: inline-block;
+    padding: 0.8rem;
+    background: #0ef;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    }
+    .read:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 30px cyan, 0 0 50px cyan, 0 0 65px cyan;   
+    }
+    .services-list div:hover{
+    transform: translateY(-10px);
+    }
+    
+    @media screen and (max-width: 480px) {
+    .sub-title{
+      font-size: 2.15rem;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+    .services-list div h2{
+      font-size: 1.5rem;
+    }
+    }
+
+    @keyframes slideTop {
+        0% {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+    }
