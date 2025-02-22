@@ -381,11 +381,22 @@ color: #0ef;
 .container{
 padding: 5.5rem;
 }
-.services-list{
+/* .services-list{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
 grid-gap: 3.5rem;
 margin-top: 3rem;
+} */
+
+.services-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+.services-list div{
+  height: 22rem;
+  width: 25.5rem;
 }
 .services-list div{
 background-color: transparent;
@@ -440,11 +451,18 @@ transform: translateY(-10px);
 @media screen and (max-width: 480px) {
 .sub-title{
   font-size: 2.15rem;
-  margin-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+#services{
+  margin-top: 8rem;
 }
 .services-list div h2{
   font-size: 1.5rem;
+}
+.services-list div{
+  height: 27rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }
 }
 
