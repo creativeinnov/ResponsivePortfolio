@@ -449,6 +449,9 @@ transform: translateY(-10px);
 }
 
 @media screen and (max-width: 480px) {
+.left{
+  margin-left: -1.5rem;
+}
 .sub-title{
   font-size: 2.15rem;
   padding-bottom: 4rem;
@@ -461,7 +464,6 @@ transform: translateY(-10px);
 }
 .services-list div{
   height: 28rem;
-  margin-left: -1.5rem;
   margin-right: -1.5rem;
 }
 }
